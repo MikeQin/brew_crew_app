@@ -11,6 +11,9 @@ In pubspec.yaml, add dependencies:
 
 Restart
 
+### Flutter Run
+`--enable-software-rendering`
+
 ## IDE: VS Code
 VS Code Extensions:
 - flutter
