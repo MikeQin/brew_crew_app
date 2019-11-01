@@ -2,7 +2,7 @@
 
 ## Visual Studio Code
 
-Extensions:
+### Extensions:
 
 - flutter
 - dart
@@ -11,6 +11,24 @@ To run:
 
 - Flutter app: `CTRL(CMD) + SHIFT + P` to create new Flutter application OR to open Emulator
 - Debug Run: open main.dart and press F5
+
+### Configure launch.json
+```
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter",
+      "request": "launch",
+      "type": "dart",
+      "args": ["--enable-software-rendering"]
+    }
+  ]
+}
+```
 
 ### Install Packages
 
