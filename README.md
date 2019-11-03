@@ -13,6 +13,9 @@ To run:
 - Debug Run: open main.dart and press F5
 
 ### Configure launch.json
+
+`CTRL(CMD) + SHIFT + P`, in the window, type: `Debug Open launch.json`
+
 ```
 {
   // Use IntelliSense to learn about possible attributes.
