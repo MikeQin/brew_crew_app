@@ -43,7 +43,15 @@ class Home extends StatelessWidget {
                 onPressed: () => _showSettingsPanel())
           ],
         ),
-        body: BrewList(),
+        body: Container(
+          child: BrewList(),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/coffee_bg.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
       ),
     );
   }
