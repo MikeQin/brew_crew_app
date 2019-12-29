@@ -62,6 +62,20 @@ gradle.properties:
 systemProp.javax.net.ssl.trustStore=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/security/cacerts
 ```
 
+## Firebase Rules
+```
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read: if request.auth.uid != null;
+      allow create: if request.auth.uid != null;
+      allow update, delete: if request.auth.uid != null && request.auth.uid == resource.id;
+    }
+  }
+}
+```
+
 ## Tutorial
 
 - Tutorial Link: https://www.youtube.com/watch?v=sfA3NWDBPZ4&list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC
